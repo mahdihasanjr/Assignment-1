@@ -1,6 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 *{
     margin:0;
     padding: 0;
+    
 }
 /* shared style start */
 
@@ -35,8 +41,8 @@
     font-weight: 800;
     font-size: 25.6px;
     color:#0D1321;
-    text-align: center;
     margin-bottom: 19.2px;
+    text-align: center;
 }
 
 .description{
@@ -70,23 +76,27 @@ nav >h2{
     background-image: url("../assets/Hero-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 24px 176.8px 36px 176.8px;
+    background-position: cover;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    padding: 40px 176.8px ;
 }
+
 .banner-container{
     width:798.4px;
-    text-align: center;
-    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
 }
+
 .banner-title{
     color: rgb(13, 19, 33);
     font-size: 38.4px;
     font-weight: 800;
     line-height: 54.4px;
     letter-spacing: 0%;
-    text-align: center;
     margin-top: 25.6px;
     margin-bottom: 19.4px;
 }
@@ -96,7 +106,6 @@ nav >h2{
     font-size: 16px;
     font-weight: 400;
     line-height: 20.8px;
-    text-align: center;
     margin-bottom: 25.8px;
 }
 
@@ -113,13 +122,16 @@ article{
     padding: 64px 77.6px;
     border-radius: 12.8px;
     background: rgba(13, 19, 33, 0.02);
+    
 }
 
 
 .why-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap:25.6px
+    
 }
 
 
@@ -127,9 +139,9 @@ article{
 .why-content{
     padding: 38.6px;
     border-radius: 16px;
+    
 }
 .why-title{
-    /* width: 312px; */
     font-size: 19.2px;
     font-weight: 700;
     line-height: 28.8px;
@@ -184,9 +196,13 @@ article{
     flex-direction: column;
     
 }
+.video{
+    padding: 25.6px;
+    border:1px solid rgba(13,19,33,0.2);
+    border-radius: 12px;
+}
 
-.inspiration-section >iframe{
-    margin: 25.6px;
+.inspiration-section iframe{
     border-radius: 12px;
 }
 
@@ -296,4 +312,115 @@ article{
 
 .next-target-row a{
     color:#0D1321;
+}
+/* next-target code is ended */
+
+
+
+/* support-section code is started */
+
+.support-section{
+    background-image: url('../assets/handshake.jpg'),  linear-gradient(380deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    margin-top: 39.2px;
+    border-radius: 12px;
+    padding: 64px 48px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.support-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.support-section h4{
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 25.6px;
+    margin-bottom: 12.8px;
+}
+
+.support-section p{
+    width: 484.8px;
+    color:#FFFFFF;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 20.8px;
+    margin-bottom: 19.2px;
+    
+}
+
+.support-container >div{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap:10px;
+}
+
+#email{
+    width: 406px;
+    border-radius: 7px;
+    padding: 15.2px 16px;
+    border:1px solid rgba(13,19,33,0.15);
+
+}
+
+#email::placeholder{
+    color:rgba(13,19,33,0.4);
+    font-size: 12.8px;
+    font-weight: 400;
+}
+
+.btn-input{
+    padding: 13.6px 16px;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#0D1321;
+}
+
+/* footer code start hare */
+
+footer{
+    border-radius: 12px;
+    background: rgba(13, 19, 33, 0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 150px;
+    
+}
+footer h5{
+    font-size: 16px;
+    font-weight: 600;
+    color:#0D1321;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 24px;
+}
+footer a:nth-child(1){
+    color:#1877F2;
+    
+}
+footer a:nth-child(2){
+    color:#FF0000;
+}
+
+footer a:nth-child(3){
+    color:#0A66C2;
+}
+
+.logo-link{
+    display: flex;
+    gap:19.2px;
 }
